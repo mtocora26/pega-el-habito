@@ -1,0 +1,150 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-13T14:00:00Z",
+  "title": "Design System: Vida saludable en la adolescencia",
+  "extensions": {
+    "colorMeta": {
+      "album-green": { "role": "primary", "displayName": "Album Green", "canonical": "#164E45", "tonalRamp": ["#152925", "#224E47", "#2E7A6E", "#36AF9C", "#5DCBB9", "#99D6CC", "#CCE6E2", "#EFF6F5"] },
+      "album-green-page": { "role": "primary", "displayName": "Album Page Green", "canonical": "#1D5C52", "tonalRamp": ["#152825", "#244C46", "#31786C", "#3AAB99", "#61C7B7", "#9BD4CB", "#CDE5E1", "#EFF6F5"] },
+      "coral": { "role": "secondary", "displayName": "Coral", "canonical": "#FF806F", "tonalRamp": ["#30110D", "#5F1A11", "#992010", "#DF2006", "#F64932", "#EE8E81", "#F0C7C1", "#F9EDEC"] },
+      "coral-ink": { "role": "secondary", "displayName": "Coral Ink", "canonical": "#A8402D", "tonalRamp": ["#291714", "#4F2922", "#7C392D", "#B14734", "#CC6D5B", "#D7A298", "#E6CFCB", "#F6F0EF"] },
+      "coral-wash": { "role": "secondary", "displayName": "Coral Wash", "canonical": "#FFE3DD", "tonalRamp": ["#30130D", "#5F1F11", "#992810", "#DF2D06", "#F65532", "#EE9581", "#F0CAC1", "#F9EEEC"] },
+      "turquoise": { "role": "tertiary", "displayName": "Turquoise", "canonical": "#55BFA6", "tonalRamp": ["#172723", "#274A41", "#357365", "#42A48D", "#68C0AB", "#9FD0C5", "#CEE3DE", "#EFF5F4"] },
+      "turquoise-wash": { "role": "tertiary", "displayName": "Turquoise Wash", "canonical": "#DDF1EA", "tonalRamp": ["#172621", "#28483D", "#38715D", "#46A080", "#6BBDA0", "#A1CEBE", "#CFE3DC", "#F0F5F3"] },
+      "ink": { "role": "neutral", "displayName": "Ink", "canonical": "#0E2F2A", "tonalRamp": ["#152825", "#234D47", "#2F796E", "#38AD9C", "#5FC9B9", "#9AD5CC", "#CCE5E2", "#EFF6F5"] },
+      "ink-soft": { "role": "neutral", "displayName": "Ink Soft", "canonical": "#3F5C56", "tonalRamp": ["#1B2221", "#313F3C", "#47615C", "#5E877F", "#82A69F", "#ADC2BE", "#D4DDDB", "#F1F3F3"] },
+      "leaf-white": { "role": "neutral", "displayName": "Leaf White", "canonical": "#F5F8F2", "tonalRamp": ["#1F2419", "#38442C", "#546940", "#739352", "#94B177", "#B8C8A7", "#D9E0D2", "#F2F4F0"] },
+      "paper": { "role": "neutral", "displayName": "Paper", "canonical": "#FFFFFF", "tonalRamp": ["#1F1F1F", "#383838", "#545454", "#737373", "#949494", "#B8B8B8", "#D9D9D9", "#F2F2F2"] },
+      "hairline": { "role": "neutral", "displayName": "Hairline", "canonical": "#D5E1DA", "tonalRamp": ["#1C221E", "#323F37", "#496052", "#618570", "#84A491", "#AFC1B6", "#D5DDD8", "#F1F3F2"] }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Display", "purpose": "Cover title only; condensed (wdth 88), uppercase, sized by container query so «ADOLESCENCIA» fits." },
+      "headline": { "displayName": "Headline", "purpose": "Topic opener titles and the closing title; wide (wdth 112), uppercase." },
+      "title": { "displayName": "Title", "purpose": "Album-green subheads inside the reading column, sentence case." },
+      "lead": { "displayName": "Lead", "purpose": "One-line intro under cover and opener titles, max 44ch." },
+      "body": { "displayName": "Body", "purpose": "All prose; reading column max 68ch." },
+      "label": { "displayName": "Label", "purpose": "Definition-list term labels (ficha, credits) and the album count; uppercase, wdth 130." },
+      "button": { "displayName": "Button", "purpose": "Every button; uppercase, wdth 120." },
+      "sticker-caption": { "displayName": "Sticker caption", "purpose": "Sticker names and numbers printed on the paper card." }
+    },
+    "shadows": [
+      { "name": "sticker-lift", "value": "0 10px 22px -10px rgb(0 0 0 / .45)", "purpose": "Stickers and the ficha card at rest: an object stuck onto the page." },
+      { "name": "button-hover-lift", "value": "0 10px 20px -12px rgb(14 47 42 / .6)", "purpose": "Primary button on hover, paired with a 2px rise." },
+      { "name": "album-page-inset", "value": "inset 0 0 0 1px rgb(245 248 242 / .08)", "purpose": "Hairline edge of the green album page on the green cover." }
+    ],
+    "motion": [
+      { "name": "ease-album", "value": "cubic-bezier(.16, 1, .3, 1)", "purpose": "Expo-out ease for every transform: button lift, sticker paste, menu wipe, radio dot." },
+      { "name": "paste-sticker", "value": "pegar .9s cubic-bezier(.16, 1, .3, 1) both", "purpose": "New sticker drops from above (scale 1.22, -14deg), overshoots to .97 and settles at its rotation." },
+      { "name": "shake-wrong", "value": "sacudir .4s cubic-bezier(.16, 1, .3, 1)", "purpose": "Quiz panel shakes horizontally on a wrong answer." },
+      { "name": "menu-wipe", "value": "clip-path .45s cubic-bezier(.16, 1, .3, 1)", "purpose": "Mobile nav sheet reveals top to bottom." },
+      { "name": "reduced-motion", "value": "animation: none; transition-duration: .01ms", "purpose": "All motion collapses under prefers-reduced-motion." }
+    ],
+    "breakpoints": [
+      { "name": "phone", "value": "520px" },
+      { "name": "closing-stack", "value": "760px" },
+      { "name": "nav-collapse", "value": "860px" },
+      { "name": "tablet", "value": "900px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Coral pill for the main action («Abrir el álbum», «Comprobar y pegar»).",
+      "html": "<button class=\"ds-btn\">Abrir el álbum</button>",
+      "css": ".ds-btn { display: inline-flex; align-items: center; justify-content: center; min-height: 52px; padding: 0 28px; border: 2px solid transparent; border-radius: 999px; background: #FF806F; color: #0E2F2A; font: 800 1rem/1 Anybody, 'Arial Narrow', sans-serif; font-stretch: 120%; letter-spacing: .04em; text-transform: uppercase; cursor: pointer; transition: transform .4s cubic-bezier(.16,1,.3,1), box-shadow .4s cubic-bezier(.16,1,.3,1); } .ds-btn:hover { transform: translateY(-2px); box-shadow: 0 10px 20px -12px rgb(14 47 42 / .6); } .ds-btn:active { transform: translateY(0); } .ds-btn:focus-visible { outline: 3px solid #FF806F; outline-offset: 3px; }"
+    },
+    {
+      "name": "Ghost Button",
+      "kind": "button",
+      "refersTo": "button-ghost",
+      "description": "Outlined pill for secondary actions on light grounds («Vaciar el álbum»).",
+      "html": "<button class=\"ds-btn-ghost\">Vaciar el álbum</button>",
+      "css": ".ds-btn-ghost { display: inline-flex; align-items: center; min-height: 46px; padding: 0 28px; border: 2px solid currentColor; border-radius: 999px; background: transparent; color: #164E45; font: 800 .9rem/1 Anybody, 'Arial Narrow', sans-serif; font-stretch: 120%; letter-spacing: .04em; text-transform: uppercase; cursor: pointer; transition: background-color .25s, color .25s; } .ds-btn-ghost:hover { background: #0E2F2A; border-color: #0E2F2A; color: #F5F8F2; } .ds-btn-ghost:focus-visible { outline: 3px solid #FF806F; outline-offset: 3px; } .ds-btn-ghost[disabled] { opacity: .45; cursor: not-allowed; }"
+    },
+    {
+      "name": "Numbered Topic Nav",
+      "kind": "nav",
+      "refersTo": "nav-link",
+      "description": "Sticky green bar links with dashed number badges; pasted topics turn solid coral, current topic inverts.",
+      "html": "<nav class=\"ds-nav\"><a href=\"#\" class=\"is-pegada\"><b>1</b>Comer</a><a href=\"#\" aria-current=\"true\"><b>2</b>Moverse</a><a href=\"#\"><b>3</b>Dormir</a></nav>",
+      "css": ".ds-nav { display: flex; gap: 6px; background: #164E45; padding: 12px; } .ds-nav a { display: flex; align-items: center; gap: 8px; padding: 8px 12px; border-radius: 999px; text-decoration: none; font: 700 1rem/1.2 Figtree, system-ui, sans-serif; color: rgb(245 248 242 / .88); transition: background-color .25s, color .25s; } .ds-nav a b { display: grid; place-items: center; width: 24px; height: 24px; border-radius: 6px; border: 1.5px dashed rgb(245 248 242 / .5); font: 900 .8rem/1 Anybody, sans-serif; } .ds-nav a:hover { background: rgb(245 248 242 / .1); color: #F5F8F2; } .ds-nav a:focus-visible { outline: 3px solid #FF806F; outline-offset: 3px; } .ds-nav a.is-pegada b { background: #FF806F; border: 1.5px solid #FF806F; color: #0E2F2A; } .ds-nav a[aria-current=\"true\"] { background: #F5F8F2; color: #164E45; } .ds-nav a[aria-current=\"true\"] b { border-color: #164E45; }"
+    },
+    {
+      "name": "Album Slot (empty)",
+      "kind": "custom",
+      "refersTo": "slot-empty",
+      "description": "Dashed 3:4 numbered slot with a faint ghost of the sticker it is waiting for.",
+      "html": "<div class=\"ds-page\"><a href=\"#\" class=\"ds-slot\"><span class=\"ds-slot__ghost\"><svg viewBox=\"0 0 64 64\"><path d=\"M40 50A20 20 0 1 1 30 12a16 16 0 0 0 10 38Z\" fill=\"#F5F8F2\"/></svg></span><b>3</b><small>Dormir</small></a></div>",
+      "css": ".ds-page { background: #1D5C52; border-radius: 18px; padding: 24px; width: 180px; color: #F5F8F2; } .ds-slot { position: relative; overflow: hidden; aspect-ratio: 3 / 4; display: grid; place-content: center; text-align: center; gap: 4px; padding: 8px; border: 2.5px dashed currentColor; border-radius: 10px; color: inherit; text-decoration: none; opacity: .55; transition: opacity .25s, background-color .25s; } .ds-slot:hover { opacity: .9; background: rgb(245 248 242 / .06); } .ds-slot:focus-visible { outline: 3px solid #FF806F; outline-offset: 3px; } .ds-slot__ghost { position: absolute; inset: 10% 14% 26%; display: grid; place-items: center; opacity: .14; filter: grayscale(1); } .ds-slot__ghost svg { width: 100%; height: 100%; } .ds-slot b, .ds-slot small { position: relative; } .ds-slot b { font: 900 3rem/1 Anybody, sans-serif; font-stretch: 130%; } .ds-slot small { font: 800 .7rem/1.2 Anybody, sans-serif; font-stretch: 110%; letter-spacing: .04em; text-transform: uppercase; }"
+    },
+    {
+      "name": "Sticker (lámina)",
+      "kind": "card",
+      "refersTo": "sticker",
+      "description": "Rotated paper sticker with art window, name, number and the fact plus its source.",
+      "html": "<div class=\"ds-lamina\"><div class=\"ds-lamina__arte\" style=\"background:#55BFA6\"><svg viewBox=\"0 0 64 64\"><circle cx=\"32\" cy=\"32\" r=\"22\" fill=\"#F5F8F2\" stroke=\"#164E45\" stroke-width=\"4\"/><path d=\"M12 26c10 4 30 4 40 0M12 38c10-4 30-4 40 0M32 10c-7 12-7 32 0 44\" fill=\"none\" stroke=\"#164E45\" stroke-width=\"3.5\" stroke-linecap=\"round\"/></svg></div><div class=\"ds-lamina__pie\"><b>Moverse</b><span>2</span></div><span class=\"ds-lamina__fuente\">60 min de actividad al día · OMS</span></div>",
+      "css": ".ds-lamina { --r: -2deg; width: 150px; aspect-ratio: 3 / 4; display: flex; flex-direction: column; background: #FFFFFF; color: #0E2F2A; border-radius: 10px; padding: 7px; transform: rotate(var(--r)); box-shadow: 0 10px 22px -10px rgb(0 0 0 / .45); } .ds-lamina__arte { flex: 1; min-height: 0; border-radius: 6px; display: grid; place-items: center; overflow: hidden; } .ds-lamina__arte svg { width: 62%; height: auto; } .ds-lamina__pie { padding: 7px 3px 1px; display: flex; justify-content: space-between; align-items: baseline; gap: 6px; } .ds-lamina__pie b { font: 900 .78rem/1.1 Anybody, sans-serif; font-stretch: 115%; text-transform: uppercase; } .ds-lamina__pie span { font: 900 .78rem/1 Anybody, sans-serif; color: #A8402D; } .ds-lamina__fuente { display: block; padding: 0 3px; font: .62rem/1.2 Figtree, system-ui, sans-serif; color: #3F5C56; }"
+    },
+    {
+      "name": "Special Sticker",
+      "kind": "card",
+      "refersTo": "sticker-special-art",
+      "description": "Completion sticker: flat-printed coral star on album green, tilted -4deg.",
+      "html": "<div class=\"ds-especial\"><div class=\"ds-especial__arte\"><svg viewBox=\"0 0 64 64\"><path d=\"M32 6l7.6 15.5 17 2.5-12.3 12 2.9 17L32 45l-15.2 8 2.9-17L7.4 24l17-2.5Z\" fill=\"#FF806F\" stroke=\"#F5F8F2\" stroke-width=\"3\" stroke-linejoin=\"round\"/></svg></div><div class=\"ds-especial__pie\"><b>Completo</b><span>5/5</span></div></div>",
+      "css": ".ds-especial { width: 150px; aspect-ratio: 3 / 4; display: flex; flex-direction: column; background: #FFFFFF; color: #0E2F2A; border-radius: 10px; padding: 7px; transform: rotate(-4deg); box-shadow: 0 10px 22px -10px rgb(0 0 0 / .45); } .ds-especial__arte { flex: 1; border-radius: 6px; background: #164E45; display: grid; place-items: center; } .ds-especial__arte svg { width: 70%; } .ds-especial__pie { padding: 7px 3px 1px; display: flex; justify-content: space-between; font: 900 .78rem/1.1 Anybody, sans-serif; font-stretch: 115%; text-transform: uppercase; } .ds-especial__pie span { color: #A8402D; }"
+    },
+    {
+      "name": "Quiz Panel",
+      "kind": "input",
+      "refersTo": "quiz-panel",
+      "description": "Green panel with one question, three paper option tiles with round radios, and the paste button.",
+      "html": "<form class=\"ds-quiz\"><fieldset><legend>Para pegar la lámina 3: ¿cuántas horas de sueño se recomiendan?</legend><label><input type=\"radio\" name=\"ds-q\"><span>5 a 6 horas</span></label><label><input type=\"radio\" name=\"ds-q\" checked><span>8 a 10 horas</span></label><label><input type=\"radio\" name=\"ds-q\"><span>12 a 14 horas</span></label></fieldset><button type=\"button\" class=\"ds-quiz__btn\">Comprobar y pegar</button><p class=\"ds-quiz__msg\">¡Correcto! Lámina 3 pegada.</p></form>",
+      "css": ".ds-quiz { max-width: 360px; background: #164E45; color: #F5F8F2; border-radius: 16px; padding: 24px; font-family: Figtree, system-ui, sans-serif; } .ds-quiz fieldset { border: 0; padding: 0; margin: 0 0 18px; display: grid; gap: 10px; } .ds-quiz legend { font-weight: 700; font-size: 1.08rem; line-height: 1.4; margin-bottom: 14px; padding: 0; } .ds-quiz label { display: flex; align-items: center; gap: 12px; padding: 12px 14px; border-radius: 12px; background: #FFFFFF; color: #0E2F2A; border: 2px solid transparent; font-size: 1rem; line-height: 1.35; cursor: pointer; transition: border-color .2s; } .ds-quiz label:hover { border-color: #55BFA6; } .ds-quiz label:has(input:checked) { border-color: #164E45; } .ds-quiz label:has(input:focus-visible) { outline: 3px solid #FF806F; outline-offset: 2px; } .ds-quiz input { appearance: none; flex: none; width: 22px; height: 22px; margin: 0; border-radius: 50%; border: 2px solid #3F5C56; display: grid; place-items: center; } .ds-quiz input:focus-visible { outline: none; } .ds-quiz input::after { content: ''; width: 10px; height: 10px; border-radius: 50%; background: #164E45; transform: scale(0); transition: transform .25s cubic-bezier(.16,1,.3,1); } .ds-quiz input:checked { border-color: #164E45; } .ds-quiz input:checked::after { transform: scale(1); } .ds-quiz__btn { width: 100%; min-height: 52px; border: 0; border-radius: 999px; background: #FF806F; color: #0E2F2A; font: 800 1rem/1 Anybody, sans-serif; font-stretch: 120%; letter-spacing: .04em; text-transform: uppercase; cursor: pointer; transition: transform .4s cubic-bezier(.16,1,.3,1); } .ds-quiz__btn:hover { transform: translateY(-2px); } .ds-quiz__btn:focus-visible { outline: 3px solid #FF806F; outline-offset: 3px; } .ds-quiz__msg { margin-top: 14px; font-weight: 700; font-size: .98rem; color: #DDF1EA; }"
+    },
+    {
+      "name": "Team Ficha",
+      "kind": "card",
+      "refersTo": "ficha",
+      "description": "Leaf-white credits card on the cover, two columns split by a dashed hairline.",
+      "html": "<dl class=\"ds-ficha\"><div><dt>Autoras</dt><dd>Nombre Apellido</dd><dd>Nombre Apellido</dd></div><div><dt>Colegio</dt><dd>Colegio · Grado</dd><dd>Asignatura · Docente</dd></div></dl>",
+      "css": ".ds-ficha { margin: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); max-width: 560px; background: #F5F8F2; color: #0E2F2A; border-radius: 14px; box-shadow: 0 10px 22px -10px rgb(0 0 0 / .45); } .ds-ficha > div { padding: 16px 20px; } .ds-ficha > div + div { border-left: 1px dashed #D5E1DA; } .ds-ficha dt { font: 800 .78rem/1.4 Anybody, sans-serif; font-stretch: 130%; letter-spacing: .1em; text-transform: uppercase; color: #A8402D; margin-bottom: 4px; } .ds-ficha dd { margin: 0; font: .98rem/1.45 Figtree, system-ui, sans-serif; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "El Álbum de Láminas",
+    "overview": "The whole site is a sticker album. Deep album-green pages own the frame (the cover, each topic opener, the quiz panels), and the reading happens on calm leaf-white paper between them. Every healthy habit is a numbered lámina: an empty dashed slot with a faint ghost of its art until the reader answers the topic's question, then a white-bordered sticker, slightly rotated, pressed into place with a small physical \"paste\" motion. Completing all five earns a flat-printed special sticker (coral star, 5/5).\n\nThe voice is youthful but not childish: wide, heavy uppercase display (Anybody) does the shouting in short bursts, and a friendly humanist sans (Figtree) carries long, comfortable paragraphs. Colour lives in the frame and on the stickers; prose stays quiet. Progress is shown by marks and objects (slot vs sticker vs special sticker), never by a hue change alone.\n\nDensity is generous: one 68ch reading column per topic, a sticky quiz beside it on desktop, stacked on mobile. Nothing competes with the text while reading.",
+    "keyCharacteristics": [
+      "Album-green frame, leaf-white reading paper, coral as the single hot accent.",
+      "Numbered dashed slots and rotated white-bordered stickers as the signature objects.",
+      "Wide uppercase Anybody display over Figtree body.",
+      "State as a mark, not a hue; every sticker prints its fact and source.",
+      "Pill buttons, softly rounded paper, one soft drop shadow reserved for stickers and the ficha."
+    ],
+    "rules": [
+      { "name": "The Frame Owns the Colour Rule", "body": "Saturated fields (green bands, coral wash) belong to the frame: cover, openers, quiz panels, closing page, footer. The reading column stays on leaf white with colour limited to album-green subheads and small coral idea marks.", "section": "colors" },
+      { "name": "The Coral Is a Fill Rule", "body": "Coral (#FF806F) carries ink text and is never itself text on leaf white or paper; use coral ink for that. Turquoise likewise is a fill or border, never text on a light ground.", "section": "colors" },
+      { "name": "The Fit-the-Longest-Word Rule", "body": "Big uppercase titles are sized by container query (cqi) against the column so the longest Spanish word never breaks or overflows; `text-wrap: balance` on every heading.", "section": "typography" },
+      { "name": "The Short-Bursts Rule", "body": "Anybody is for titles, labels, buttons and sticker print only. Paragraphs, legends and messages are always Figtree.", "section": "typography" },
+      { "name": "The Only Objects Cast Shadows Rule", "body": "A shadow means \"this is a thing stuck onto the page\" (sticker, ficha). Panels and bands never get one.", "section": "elevation" }
+    ],
+    "dos": [
+      "Do show progress as a change of object (dashed numbered slot → rotated paper sticker → special sticker), not as a recolour.",
+      "Do print the fact and its source on every sticker («400 g de frutas y verduras al día · OMS»), and keep the full fact in the prose.",
+      "Do keep reading columns on leaf white at max 68ch, Figtree 1.125rem/1.7.",
+      "Do use coral ink (#A8402D) whenever coral must be text on a light ground.",
+      "Do alternate album green and album page green between consecutive green bands.",
+      "Do size big uppercase titles by container query so the longest word fits.",
+      "Do honour reduced motion: the paste, shake and menu wipe all collapse to instant."
+    ],
+    "donts": [
+      "Don't use a photo hero or a card grid of topics; the album is the structure.",
+      "Don't put facts in stat panels or big-number callouts; they live in the prose and on the sticker.",
+      "Don't let the album take over the reading column; it lives on the cover, the topic openers and the closing page.",
+      "Don't set turquoise or plain coral as text on leaf white or paper.",
+      "Don't give flat panels or bands a drop shadow; only pasted objects cast one.",
+      "Don't set paragraphs, legends or messages in Anybody."
+    ]
+  }
+}

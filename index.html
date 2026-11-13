@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pega el Hábito · Vida saludable en la adolescencia</title>
+  <meta name="description" content="Blog en forma de álbum de láminas sobre hábitos saludables para adolescentes: alimentación, actividad física, sueño, salud emocional y pantallas. Informática 8A, INSTICALDAS.">
+  <meta name="theme-color" content="#164E45">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect x='3' y='2' width='26' height='28' rx='4' fill='%23164E45'/%3E%3Crect x='8' y='7' width='16' height='18' rx='2' fill='%23FF806F' transform='rotate(-6 16 16)'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anybody:wdth,wght@75..150,600..900&family=Figtree:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <a class="skip" href="#comer">Saltar al primer tema</a>
+
+  <header class="bar">
+    <div class="wrap bar__inner">
+      <a class="logo" href="#inicio" aria-label="Pega el Hábito, volver a la portada">
+        <svg viewBox="0 0 32 32" aria-hidden="true"><rect x="3" y="2" width="26" height="28" rx="4" fill="currentColor"/><rect x="8" y="7" width="16" height="18" rx="2" fill="#FF806F" transform="rotate(-6 16 16)"/></svg>
+        Pega el <span>Hábito</span>
+      </a>
+      <button class="bar__toggle" type="button" aria-expanded="false" aria-controls="temas-nav">
+        <span class="sr">Temas</span><i></i><i></i>
+      </button>
+      <nav id="temas-nav" class="bar__nav" aria-label="Temas del álbum">
+        <ol>
+          <li><a href="#comer"><b>1</b>Comer</a></li>
+          <li><a href="#moverse"><b>2</b>Moverse</a></li>
+          <li><a href="#dormir"><b>3</b>Dormir</a></li>
+          <li><a href="#sentir"><b>4</b>Sentir</a></li>
+          <li><a href="#pantallas"><b>5</b>Pantallas</a></li>
+        </ol>
+      </nav>
+    </div>
+  </header>
+
+  <!-- PORTADA DEL ÁLBUM -->
+  <section class="cover" id="inicio" aria-labelledby="titulo">
+    <div class="wrap cover__grid">
+      <div class="cover__copy">
+        <h1 id="titulo">Vida saludable <span>en la adolescencia</span></h1>
+        <p class="cover__lead">Un blog que se llena como un álbum: lee cada tema, responde la pregunta y pega tu lámina. Cinco temas, cinco hábitos para sentirte mejor.</p>
+        <a class="btn" href="#comer">Abrir el álbum</a>
+
+        <dl class="ficha">
+          <div>
+            <dt>Autora</dt>
+            <dd>María Isabel Castro Tocora</dd>
+          </div>
+          <div>
+            <dt>Colegio</dt>
+            <dd>INSTICALDAS · Grado 8A</dd>
+            <dd>Informática · Prof. Juan Carlos Isaza</dd>
+          </div>
+        </dl>
+      </div>
+
+      <div class="album" aria-label="Tu álbum">
+        <ol class="album__grid" data-album></ol>
+        <p class="album__count" aria-live="polite"><strong data-count>0</strong> de 5 láminas pegadas</p>
+      </div>
+    </div>
+  </section>
+
+  <main>
+    <!-- 1 COMER -->
+    <article class="tema" id="comer" data-n="1" aria-labelledby="t1">
+      <header class="tema__head tema__head--verde">
+        <div class="wrap tema__head-grid">
+          <div class="slot slot--head" data-slot="1"></div>
+          <div>
+            <h2 id="t1">Comer bien</h2>
+            <p>Tu cuerpo está creciendo más rápido que en casi cualquier otra etapa de la vida. Lo que comes es el material con el que construye.</p>
+          </div>
+        </div>
+      </header>
+      <div class="wrap tema__body">
+        <div class="col">
+          <p>Comer bien no significa hacer dieta ni prohibirte lo que te gusta. Significa que la mayor parte de lo que comes le dé a tu cuerpo lo que necesita: energía para estudiar, proteínas para los músculos, calcio para los huesos y hierro para la sangre.</p>
+          <h3>El desayuno sí cuenta</h3>
+          <p>Salir de casa sin comer hace que llegues a clase con poca energía y más hambre a media mañana, justo cuando aparecen los paquetes y las gaseosas. Algo sencillo sirve: fruta, huevo, arepa, avena o leche.</p>
+          <h3>Frutas y verduras en cada comida</h3>
+          <p>La Organización Mundial de la Salud recomienda comer al menos 400 gramos de frutas y verduras al día. Suena a mucho, pero son unas cinco porciones: una fruta en el desayuno, ensalada al almuerzo, otra fruta en la tarde.</p>
+          <h3>Ideas para esta semana</h3>
+          <ul class="ideas">
+            <li>Lleva agua al colegio y deja la gaseosa para ocasiones especiales.</li>
+            <li>Cambia un paquete de la tienda por una fruta o un puñado de maní.</li>
+            <li>Lee la etiqueta: si el azúcar aparece entre los primeros ingredientes, tiene mucho.</li>
+          </ul>
+        </div>
+        <form class="quiz" data-quiz="1" data-answer="b">
+          <fieldset>
+            <legend>Para pegar la lámina 1: ¿cuántos gramos de frutas y verduras al día recomienda la OMS?</legend>
+            <label><input type="radio" name="q1" value="a"><span>100 gramos</span></label>
+            <label><input type="radio" name="q1" value="b"><span>400 gramos</span></label>
+            <label><input type="radio" name="q1" value="c"><span>1 kilo</span></label>
+          </fieldset>
+          <button type="submit" class="btn btn--quiz">Comprobar y pegar</button>
+          <p class="quiz__msg" role="status" data-ok="¡Correcto! Son unas 5 porciones al día. Lámina 1 pegada." data-ko="Todavía no. Vuelve a leer «Frutas y verduras en cada comida» e intenta otra vez."></p>
+        </form>
+      </div>
+    </article>
+
+    <!-- 2 MOVERSE -->
+    <article class="tema" id="moverse" data-n="2" aria-labelledby="t2">
+      <header class="tema__head tema__head--verde2">
+        <div class="wrap tema__head-grid">
+          <div class="slot slot--head" data-slot="2"></div>
+          <div>
+            <h2 id="t2">Moverse todos los días</h2>
+            <p>No hace falta ser deportista. Bailar, montar bicicleta, caminar al colegio o jugar fútbol en el descanso también cuentan.</p>
+          </div>
+        </div>
+      </header>
+      <div class="wrap tema__body">
+        <div class="col">
+          <p>Moverte fortalece el corazón, los músculos y los huesos, pero también ayuda a dormir mejor, a concentrarte y a bajar el estrés. Muchos de los beneficios se notan en el ánimo antes que en el cuerpo.</p>
+          <h3>Una hora al día</h3>
+          <p>La OMS recomienda que los jóvenes de 5 a 17 años hagan, en promedio, 60 minutos diarios de actividad física moderada a intensa, de la que hace sudar un poco y acelera la respiración. No tienen que ser seguidos: puedes sumarlos durante el día.</p>
+          <h3>Fuerza tres veces por semana</h3>
+          <p>Además, la OMS sugiere actividades que fortalezcan músculos y huesos al menos tres días a la semana: saltar, trepar, hacer sentadillas o flexiones. Y algo igual de importante: pasar menos tiempo sentado frente a una pantalla.</p>
+          <h3>Ideas para esta semana</h3>
+          <ul class="ideas">
+            <li>Usa las escaleras y camina los trayectos cortos.</li>
+            <li>Arma una lista de canciones y baila tres de ellas seguidas.</li>
+            <li>Propón un partido o un juego activo en el descanso.</li>
+          </ul>
+        </div>
+        <form class="quiz" data-quiz="2" data-answer="b">
+          <fieldset>
+            <legend>Para pegar la lámina 2: ¿cuánta actividad física al día recomienda la OMS para tu edad?</legend>
+            <label><input type="radio" name="q2" value="a"><span>20 minutos</span></label>
+            <label><input type="radio" name="q2" value="b"><span>60 minutos</span></label>
+            <label><input type="radio" name="q2" value="c"><span>3 horas</span></label>
+          </fieldset>
+          <button type="submit" class="btn btn--quiz">Comprobar y pegar</button>
+          <p class="quiz__msg" role="status" data-ok="¡Correcto! Una hora al día, y puedes sumarla por partes. Lámina 2 pegada." data-ko="Casi. Vuelve a leer «Una hora al día» e intenta otra vez."></p>
+        </form>
+      </div>
+    </article>
+
+    <!-- 3 DORMIR -->
+    <article class="tema" id="dormir" data-n="3" aria-labelledby="t3">
+      <header class="tema__head tema__head--verde">
+        <div class="wrap tema__head-grid">
+          <div class="slot slot--head" data-slot="3"></div>
+          <div>
+            <h2 id="t3">Dormir de verdad</h2>
+            <p>Mientras duermes, tu cerebro guarda lo que aprendiste en el día y tu cuerpo se repara. Trasnochar se cobra al día siguiente.</p>
+          </div>
+        </div>
+      </header>
+      <div class="wrap tema__body">
+        <div class="col">
+          <p>En la adolescencia el reloj interno cambia: es normal sentir sueño más tarde en la noche. El problema es que la alarma del colegio no cambia, y si te acuestas tarde terminas durmiendo mucho menos de lo que necesitas.</p>
+          <h3>¿Cuánto es suficiente?</h3>
+          <p>La Academia Americana de Medicina del Sueño recomienda que los jóvenes de 13 a 18 años duerman entre 8 y 10 horas cada noche. Dormir menos de forma seguida se nota en el ánimo, la memoria y la concentración.</p>
+          <h3>Ideas para esta semana</h3>
+          <ul class="ideas">
+            <li>Acuéstate y levántate a horas parecidas, también el fin de semana.</li>
+            <li>Deja el celular cargando fuera de la cama.</li>
+            <li>Evita café, té o bebidas energizantes en la tarde y la noche.</li>
+          </ul>
+        </div>
+        <form class="quiz" data-quiz="3" data-answer="b">
+          <fieldset>
+            <legend>Para pegar la lámina 3: ¿cuántas horas de sueño se recomiendan entre los 13 y los 18 años?</legend>
+            <label><input type="radio" name="q3" value="a"><span>5 a 6 horas</span></label>
+            <label><input type="radio" name="q3" value="b"><span>8 a 10 horas</span></label>
+            <label><input type="radio" name="q3" value="c"><span>12 a 14 horas</span></label>
+          </fieldset>
+          <button type="submit" class="btn btn--quiz">Comprobar y pegar</button>
+          <p class="quiz__msg" role="status" data-ok="¡Correcto! Entre 8 y 10 horas. Lámina 3 pegada." data-ko="No es esa. Vuelve a leer «¿Cuánto es suficiente?» e intenta otra vez."></p>
+        </form>
+      </div>
+    </article>
+
+    <!-- 4 SENTIR -->
+    <article class="tema" id="sentir" data-n="4" aria-labelledby="t4">
+      <header class="tema__head tema__head--verde">
+        <div class="wrap tema__head-grid">
+          <div class="slot slot--head" data-slot="4"></div>
+          <div>
+            <h2 id="t4">Cuidar lo que sientes</h2>
+            <p>La salud también es emocional. Sentirte triste, con rabia o con nervios es normal; lo importante es no cargarlo sola o solo.</p>
+          </div>
+        </div>
+      </header>
+      <div class="wrap tema__body">
+        <div class="col">
+          <p>En esta etapa cambian muchas cosas al mismo tiempo: el cuerpo, las amistades, lo que se espera de ti en el colegio y en la casa. Es normal que las emociones se sientan más fuertes que antes.</p>
+          <h3>Por qué importa ahora</h3>
+          <p>Según la OMS, la mitad de los problemas de salud mental empiezan antes de los 14 años, y muchos no se detectan a tiempo. Hablar de lo que sientes no es exagerar: es la forma más rápida de que alguien te pueda ayudar.</p>
+          <h3>Ideas para esta semana</h3>
+          <ul class="ideas">
+            <li>Cuéntale a alguien de confianza algo que te esté preocupando.</li>
+            <li>Haz cada día algo solo porque lo disfrutas: dibujar, cantar, leer, salir.</li>
+            <li>Si te sientes mal por varios días seguidos, habla con tu familia, con orientación escolar o con un profesional de salud.</li>
+          </ul>
+        </div>
+        <form class="quiz" data-quiz="4" data-answer="b">
+          <fieldset>
+            <legend>Para pegar la lámina 4: si algo te preocupa desde hace días, ¿qué ayuda más?</legend>
+            <label><input type="radio" name="q4" value="a"><span>Guardármelo para no molestar</span></label>
+            <label><input type="radio" name="q4" value="b"><span>Hablarlo con alguien de confianza</span></label>
+            <label><input type="radio" name="q4" value="c"><span>Pasar más horas en redes para distraerme</span></label>
+          </fieldset>
+          <button type="submit" class="btn btn--quiz">Comprobar y pegar</button>
+          <p class="quiz__msg" role="status" data-ok="¡Eso es! Pedir ayuda también es cuidarte. Lámina 4 pegada." data-ko="Esa opción suele empeorar las cosas. Piénsalo otra vez."></p>
+        </form>
+      </div>
+    </article>
+
+    <!-- 5 PANTALLAS -->
+    <article class="tema" id="pantallas" data-n="5" aria-labelledby="t5">
+      <header class="tema__head tema__head--verde2">
+        <div class="wrap tema__head-grid">
+          <div class="slot slot--head" data-slot="5"></div>
+          <div>
+            <h2 id="t5">Pantallas y redes</h2>
+            <p>El celular sirve para aprender, hablar con amigos y divertirse. El reto es que no te quite el sueño, el movimiento ni la calma.</p>
+          </div>
+        </div>
+      </header>
+      <div class="wrap tema__body">
+        <div class="col">
+          <p>Las redes están diseñadas para que sigas deslizando: siempre hay otro video, otra historia, otra notificación. No es falta de fuerza de voluntad; es cómo funcionan. Por eso ayuda poner tus propias reglas.</p>
+          <h3>Sentado, pero no todo el día</h3>
+          <p>Las guías de la OMS piden limitar el tiempo que pasamos sentados, en especial el tiempo de pantalla por entretenimiento. Cada hora de pantalla que cambias por movimiento cuenta dos veces.</p>
+          <h3>Pantallas y sueño</h3>
+          <p>Mirar el celular en la cama retrasa la hora de dormir: el contenido te mantiene despierto y las notificaciones interrumpen. Apagarlo un rato antes de acostarte es de los cambios más fáciles y que más se notan.</p>
+          <h3>Ideas para esta semana</h3>
+          <ul class="ideas">
+            <li>Silencia las notificaciones de las apps que no necesitas.</li>
+            <li>Comidas sin celular: en la mesa se conversa.</li>
+            <li>Si algo en redes te hace sentir mal, deja de seguirlo. Cuentas así no te deben nada.</li>
+          </ul>
+        </div>
+        <form class="quiz" data-quiz="5" data-answer="b">
+          <fieldset>
+            <legend>Para pegar la lámina 5: ¿qué es mejor hacer a la hora de dormir?</legend>
+            <label><input type="radio" name="q5" value="a"><span>Ver videos en la cama hasta tener sueño</span></label>
+            <label><input type="radio" name="q5" value="b"><span>Dejar el celular cargando fuera de la cama</span></label>
+            <label><input type="radio" name="q5" value="c"><span>Revisar las notificaciones una última vez</span></label>
+          </fieldset>
+          <button type="submit" class="btn btn--quiz">Comprobar y pegar</button>
+          <p class="quiz__msg" role="status" data-ok="¡Correcto! Lejos de la cama, el celular no te roba sueño. Lámina 5 pegada." data-ko="Esa te mantiene despierto. Intenta otra vez."></p>
+        </form>
+      </div>
+    </article>
+
+    <!-- CONTRAPORTADA -->
+    <section class="cierre" aria-labelledby="t-cierre">
+      <div class="wrap cierre__grid">
+        <div class="cierre__texto">
+          <h2 id="t-cierre" data-cierre-titulo>Tu álbum va en <span data-count>0</span> de 5</h2>
+          <p data-cierre-texto>Cada lámina es un hábito. No tienes que cambiarlo todo hoy: elige uno y empieza esta semana.</p>
+          <button class="btn btn--ghost" type="button" id="reiniciar">Vaciar el álbum</button>
+        </div>
+        <ol class="album__grid album__grid--cierre" data-album aria-label="Tu álbum completo"></ol>
+      </div>
+    </section>
+  </main>
+
+  <footer class="pie">
+    <div class="wrap pie__grid">
+      <div>
+        <p class="pie__titulo">Pega el Hábito</p>
+        <p>Vida saludable en la adolescencia.</p>
+        <p>Proyecto de la asignatura de Informática, grado 8A, INSTICALDAS.</p>
+      </div>
+      <dl class="pie__creditos">
+        <div><dt>Autoras</dt><dd>María Isabel Castro Tocora</dd><dd>María José Puentes Ballesteros</dd></div>
+        <div><dt>Docente</dt><dd>Juan Carlos Isaza</dd></div>
+        <div><dt>Fuentes</dt><dd>Organización Mundial de la Salud (OMS)</dd><dd>Academia Americana de Medicina del Sueño</dd></div>
+      </dl>
+    </div>
+    <div class="wrap pie__nota">
+      <p>La información de este blog es general y educativa; no reemplaza la consulta con un profesional de salud.</p>
+      <p>© 2026</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
